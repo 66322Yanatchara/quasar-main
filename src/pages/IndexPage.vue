@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import { values } from 'core-js/core/array';
 import { useQuasar } from 'quasar'
 import { ref } from 'vue'
 
@@ -94,6 +95,8 @@ export default {
       },
 
       onReset () {
+        ID.value = null
+        surname,values = null
         name.value = null
         age.value = null
         accept.value = false
